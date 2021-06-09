@@ -1,6 +1,7 @@
 import { ethers } from "ethers";
 export declare class Multicaller {
     readonly provider: ethers.providers.Provider;
+    private _hijackProvider;
     gasLimitPerCall: number;
     resultLimitPerCall: number;
     private _pendingRequests;
